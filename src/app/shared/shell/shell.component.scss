@@ -1,0 +1,134 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  mat-sidenav-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    overflow-y: hidden;
+  }
+  .content-container {
+    flex: 1 0 auto;
+    overflow-y: auto;
+  }
+  .sidenav-container {
+      display: flex;
+      flex-direction: column;
+      overflow-y: hidden;
+    }
+    .content-container{
+      flex: 1 0 auto;
+      overflow-y: auto;
+    }
+    .shadow-toolbar {
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2) ;
+    }
+    .logo {
+      font-size: 1.2em;
+      cursor: pointer;
+      outline: none;
+    }
+    .menuItems {
+      font-family: 'Playfair Display', serif;
+      position: relative;
+    }
+    .mat-drawer-side {
+      border: none;
+      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    .sidenav {
+      width: 200px;
+      font-family: sofia-pro;
+    }
+    
+    .sidenav .mat-toolbar {
+      background: inherit;
+    }
+    
+    .mat-toolbar.mat-primary {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    
+    .fill-space {
+      flex: 1 1 auto;
+    }
+    
+    i {
+      font-style: normal;
+      font-size: 1.25em;
+      margin-right: 16px;
+    }
+    
+    .avatar {
+      width: 1.75em;
+      border-radius: 50%;
+      margin: 0 10px 5px;
+    }
+    .logo img {
+      /* Add your styles here, e.g., */
+      width: 150px;
+      height: auto;
+    }
+  
+    //footer
+  
+    footer {
+      display: flex;
+      flex-wrap: nowrap; /* Change this to nowrap to prevent wrapping */
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #ff6161;
+      color: #fff;
+      flex-shrink: 0;
+    }
+      
+    .social-bar {
+      display: flex;
+      align-items: center;
+      flex: 1; /* Add this to let the social-bar grow to occupy the available space */
+    }
+      
+    .social-bar a {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+    
+    .social-bar img {
+      height: 40px;
+      width: auto;
+      margin-right: 5px;
+    }
+    
+    #footerText {
+      margin: 0;
+      font-size: 12px;
+      text-align: right; /* Add this to align the text to the right */
+    }
+    .shaded-button{
+      background-color: #ff6161;
+      color: #fff;
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+      margin-left: 10px;
+    }
+  
+    @media (max-width:768px) {
+      .shaded-button {
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+    @media (min-width: 601px) {
+      .menuItems {
+        text-decoration: none;
+      }
+    }
+  
+    

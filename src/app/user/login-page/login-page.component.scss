@@ -1,0 +1,68 @@
+h1{
+    text-align: c;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: #ff6161;
+    padding-top: 5%;
+    margin-bottom: 30px;
+}
+h5{
+    text-align: c;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+button {
+    margin-top: 50px;
+    img {
+        width: 1.25em;
+    }
+}
+mat-raised-button {
+    width: 2em;;
+}
+
+
+:host {
+    text-align: center;
+}
+
+.logout {
+    padding-top: 5em;
+}
+.logButton {
+    padding-top: 8;
+    font-size: 18px;
+    padding: 12px 24px;
+    margin-bottom: 20px;
+}
+
+.topSection {
+    padding-top: 5%;
+    padding-bottom: 40%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #d1e0eb;
+  }
+
+  @media (max-width: 767px) {
+    .box {
+      height: 300px; /* set a smaller height */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* add a shadow */
+      margin: 20px; /* add some margin to the sides */
+    }
+    body{
+        height:85vh;
+    }
+  }

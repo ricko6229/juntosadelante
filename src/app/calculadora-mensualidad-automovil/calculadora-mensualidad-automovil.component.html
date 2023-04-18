@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Calculadora De Mensualidad De Automovil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora De Mensualidad De Prestamo De Automovil </h1>
+      <P>Mete tus datos y ve cómo cambian los pagos mensuales de un préstamo de auto actualizando el costo del carro,  el termino del préstamo, y la tasa de interés (basada en tu
+        crédito).</P>
+    </header>
+    <main>
+      <div class="loan-calculator">
+        <div class="top">
+          <h2>Estima Tu Pago Mensual</h2>
+    
+          <form>
+            <div class="group">
+              <div class="title">Cuanto Cuesta el Automovil?</div>
+              <input type="number" [(ngModel)]="loanAmount" name="loanAmount" class="loan-amount" />
+            </div>
+          
+            <div class="group">
+              <div class="title">Cual es la tasa de interes?</div>
+              <input type="number" [(ngModel)]="interestRate" name="interestRate" class="interest-rate" />
+            </div>
+          
+            <div class="group">
+              <div class="title">Cuantos meses dura el prestamo?</div>
+              <input type="number" [(ngModel)]="loanTenure" name="loanTenure" class="loan-tenure" />
+            </div>
+          </form>
+        </div>
+    
+        <div class="result">
+          <div class="left">
+            <div class="loan-emi">
+              <h3>Pago Mensual Estimado</h3>
+              <div class="value">{{ formatCurrency(loanEMI) }}</div>
+            </div>
+    
+            <div class="total-interest">
+              <h3>Interes Pagado Total</h3>
+              <div class="value">{{ formatCurrency(totalInterest) }}</div>
+            </div>
+    
+            <div class="total-amount">
+              <h3>Cantidad Pagada Por Automovil</h3>
+              <div class="value">{{ formatCurrency(totalAmount) }}</div>
+            </div>
+    
+            <button class="calculate-btn" (click)="init()">Calculate</button>
+          </div>
+    
+          <div class="right">
+            <canvas #myChart width="400" height="400"></canvas>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

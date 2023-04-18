@@ -1,0 +1,105 @@
+header {
+    text-align: center;
+    background: #d1e0eb;
+    padding: 20px 20px 60px 20px;
+
+}
+.MainButtons {
+    font-size: 25px;
+    padding: 30px;
+    color: #ff6161;
+}
+.mat-toolbar{
+   box-shadow:  0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+}
+
+//sectionOne Code
+h1{
+    text-align: c;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 300;
+    color: #ff6161;
+}
+h2{
+    font-size: 20px;
+}
+p{
+    font-size: 15px;
+}
+
+.SectionOne {
+    font-family: 'Playfair Display', serif;
+    margin: 2%;
+    padding:4% 0 4% 0;
+}
+
+.svg-right {
+  float: right;
+  width: 200px; /* adjust this width as per your needs */
+  margin: 20px;
+}
+
+//Section two Code
+
+.SectionTwo {
+    background-color: #d1e0eb;
+    padding: 20px 20px 20px 20px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    
+}
+
+#TopicH3 {
+    color: #ff6161;
+}
+#TopicP2 {
+    color: #ff6161;
+    font-size: 15px;
+}
+
+//Section Three code
+
+.SectionThree {
+    padding: 20px 20px 60px 20px;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+.svg-left{
+    float: left;
+    width: 100px; /* adjust this width as per your needs */
+    margin: 20px;
+  }
+
+
+
+  //This CSS code will float the SVG image to the right side of the section and give it a width of 200 pixels with a left margin of 20 pixels. You can adjust these values as per your needs to achieve the desired layout.
+  
+  @media only screen and (min-width: 768px) {
+    section {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 20px;
+      padding: 20px;
+    }
+    
+    .svg-right {
+      order: 3;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    .svg-left {
+        order: 3;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+  
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+  
+  
+  
+  
